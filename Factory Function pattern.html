@@ -1,0 +1,19 @@
+<script>
+function prop(room, color, size) {
+    var house = {};
+    house.room = room; 
+   house.color = color;
+   house.size = size;
+    house.custom = function() {
+         return "This house has " + this.room + " rooms, the color of house is " + this.color+", and the size is "+this.size+"."; //returing the values
+    }
+
+    return house;
+
+}
+
+var newHouse = prop(prompt("How many rooms?"),prompt("What is color of house?."),prompt("What is size of house"));// changing the initial values
+
+console.log(newHouse.custom());//calling the function
+
+</script>

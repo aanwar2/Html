@@ -1,0 +1,47 @@
+<script>
+		var user ={
+
+    		name: "Karamazov",
+
+    		profession: "monk",
+
+    		age: 20,
+
+    		 reset: function()
+    		 {
+    		 	for ( var property in this)
+    		 	{
+    		 		if(property != "reset")
+    		 		{
+    			this[property] = undefined ;
+        	}
+        }
+
+    //___________________________<---add reset() method here
+
+		}
+			}
+ 
+for (var property in user){
+	console.log(property+";"+user[property]);
+}
+user.reset();
+
+//___________________________________The result should look like this:
+
+		
+
+	//	user.reset();
+
+	console.log(user.name); //________________________undefined
+
+	console.log(user.profession); //__________________undefined
+	console.log(user.age); //_________________________undefined
+
+//		user.test = "";		
+
+//		user.reset();//______________________no error
+
+ //		console.log(user.test); //________________________undefined
+
+</script>

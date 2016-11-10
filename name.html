@@ -1,0 +1,21 @@
+<script>
+text = "Amna is a girl. Amna lives in Georgia. Amna is Amna";
+
+var myName = "Amna";
+var hits = [];
+
+for(var i = 0; i < text.length; i++) {
+    if (text[i] === myName[0]) {
+     
+        for(var j = i; j < (myName.length + i); j++) {
+            hits.push(text[j]);
+        }
+    }
+}
+
+if (hits.length === 0) {
+    console.log("Name not found!");
+} else {
+    console.log(hits);
+}
+</script>

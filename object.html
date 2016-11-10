@@ -1,0 +1,29 @@
+<script>
+var person1=
+{
+	name:'Sabrina',
+	age:25,
+	works:"Works at fjif",
+	growsoneyearolder:function(){
+		age++;
+	}
+};
+
+var person2=
+{
+	name:'Sa',
+	age:21,
+	works:'Works at fudfgcb'
+};
+
+var arrayOfPeople=[person1, person2];
+
+for(var i=0; i<arrayOfPeople.length; i++){
+	var person=arrayOfPeople[i];
+	for(var prop in person){
+	console.log(person[prop]);
+	}
+}
+console.log(person1.age);
+
+</script>

@@ -1,0 +1,23 @@
+<script>
+
+var house ={
+    room:55, 
+    color:'red',
+    size:'55 feet',
+    customize:function(){
+         return "This house has " + this.room + " rooms, the color of house is " + this.color+", and the size is "+this.size+"."; //function returning the output.
+    }
+};
+
+house.customize();
+
+var customizable = Object.create(house);
+
+customizable.room = prompt("How many rooms?"); // changing the value of room
+customizable.color = prompt("What is color of house?.");  // changing the value of color
+customizable.size = prompt("What is size of house");  // changing the value of size
+
+console.log(customizable.customize() ); //calling the function customize function for customizable 
+
+
+</script>
